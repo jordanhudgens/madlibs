@@ -137,3 +137,17 @@ button {
 	margin-left: 47px;
 	color: #A80C0C;
 }
+
+.fade {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  opacity: 0.0;
+}
+
+.fadeIn {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  opacity: 1.0;
+}

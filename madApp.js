@@ -4,13 +4,17 @@ angular.module('madApp', [])
 	.controller('MyCtrl', function($scope) {
 
 		//initialize 
-		$scope.generatedLib = false;
+		$scope.generatedLib = true;
 		$scope.submitted = false;
+		$scope.fade = false;
+		$scope.fadeIn = false;
 
 		$scope.submit = function() {
 			if($scope.madLibForm.$valid) {
 				console.log('The form is valid');
-				$scope.generatedLib = true;
+				$scope.generatedLib = false;
+				$scope.fade = true;
+				$scope.fadeIn = true;
 			} else {
 				console.log('The form is invalid');
 				$scope.generatedLib = false;
